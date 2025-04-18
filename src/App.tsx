@@ -1,10 +1,11 @@
+import { Navbar } from './components/Navbar/Navbar';
+import './App.css';
 
-
-const App = () => {
+function App() {
 
   return (
     <>
-      App
+      <Navbar />
     </>
   )
 }
