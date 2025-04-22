@@ -109,6 +109,7 @@
     font-size: 1rem;
     transition: color 2s ease-in-out;
     overflow: hidden;
+    border-image: linear-gradient(45deg, #286067, #58C2CE) 1;
 }
 
 .navbar_link:hover {
@@ -184,6 +185,8 @@
     transform: scale(1);
 }
 
+
+/* Responsive Styles */
 
 
 @media (max-width: 768px) {
