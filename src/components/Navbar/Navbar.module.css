@@ -1,23 +1,32 @@
 .navbar {
     background-color: #070C0D;
     display: flex;
-    justify-content: flex-end;
+    padding: 1.5rem;
+    justify-content: space-between;
     align-items: center;
-    height: auto;
-    padding: 24px 24px;
-    position: relative;
 }
 
 .navbar_logo {
-    position: absolute;
-    left: 0px;
-    top: -70px;
+    font-size: 28px;
+    font-weight: medium;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(to right, #4FC0CD, #286067, #58C2CE, #286067, #4FC0CD);
+    background-size: 200% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3s linear infinite;
 }
 
-.navbar_logo_image {
-    width: 250px !important;
-    height: auto !important;
-    object-fit: contain;
+@keyframes animate-gradient {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .navbar_icon {
@@ -78,7 +87,7 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    font-size: 28px;
+    font-size: 0.5rem;
     font-weight: light;
     list-style: none;
     padding: 0;
@@ -126,7 +135,7 @@
 .navbar_button {
     position: relative;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2.5rem;
     font-size: 1.2rem;
     color: #ECF1F2;
     background: transparent;

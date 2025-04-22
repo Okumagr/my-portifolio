@@ -1,12 +1,9 @@
 import styles from './Navbar.module.css';
-import navbarLogo from '../../assets/images/navbar_logo.png';
 
 export function Navbar() {
     return (
         <div className={styles["navbar"]}>
-            <div className={styles["navbar_logo"]}>
-                <img src={navbarLogo} alt="Logo" className={styles["navbar_logo_image"]} />
-            </div>
+            <div className={styles["navbar_logo"]}>Gabriel Renan</div>
             <ul className={styles["navbar_links"]}>
                 <li className={`${styles["navbar_icon"]} ${styles["linkedin"]}`}>
                     <svg className={styles["icon"]} width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
