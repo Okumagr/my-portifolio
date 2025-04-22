@@ -1,15 +1,27 @@
+import { Typewriter } from 'react-simple-typewriter'
+import styles from './Home.module.css'
 
-
-function Home() {
-
+export function Home() {
     return (
-        <>
-            <div className="home">
+        <div className={styles["home_container"]}>
+            <div className={styles['text_area']}>
                 <h1>Welcome to My Portfolio</h1>
-                <p>This is the home page of my portfolio.</p>
+                <h2>I am Gabriel Renan,</h2>
+                <h2>
+                    <Typewriter
+                        words={['Full Stack Developer', 'UI/UX Design']}
+                        loop={0}
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                </h2>
             </div>
-        </>
+            <div className={styles['image_area']}>
+                <img src='./src/assets/images/vagabond_logo.png' alt="Imagem do meu mangá (Desenho) favorito (Vagabond)" />
+            </div>
+        </div>
     )
 }
-
-export default Home
